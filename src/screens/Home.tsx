@@ -9,9 +9,6 @@ const Home = () => {
             <Box position={'relative'}>
                 <HomePageTabs />
             </Box>
-            <Box minH={'100vh'}>
-
-            </Box>
         </Box>
     );
 }
