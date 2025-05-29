@@ -1,6 +1,6 @@
 import { Box, Button, Icon, Image, Text } from "@chakra-ui/react";
 import { UserPlus2 } from "lucide-react";
-import logo from '../src/assets/rr.png';
+import logo from '../assets/rr.png';
 
 export const Navbar = () => {
     return (

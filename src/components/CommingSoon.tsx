@@ -1,5 +1,5 @@
 import { Box, Image, Text } from "@chakra-ui/react";
-import img from '../src/assets/comming.webp';
+import img from '../assets/comming.webp';
 
 const FullScreenLoader = () => {
 
