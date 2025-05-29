@@ -16,6 +16,8 @@ import {
   ExternalLink,
 } from 'lucide-react';
 
+import advImg from '../assets/rradv.webp';
+
 interface Job {
   id: number;
   title: string;
@@ -329,7 +331,7 @@ const JobsPage: React.FC = () => {
             )}
           </Grid>
           <Box maxW={'250px'} display={{ base: 'none', md: 'block' }} position={'relative'}>
-            <Image zIndex={2} position={{ base: 'relative', md: 'sticky' }} top={{ base: 'auto', md: '150px' }} src='../src/assets/rradv.webp'></Image>
+            <Image zIndex={2} position={{ base: 'relative', md: 'sticky' }} top={{ base: 'auto', md: '150px' }} src={advImg}></Image>
           </Box>
         </Stack>
       </Box>
