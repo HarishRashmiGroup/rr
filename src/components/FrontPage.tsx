@@ -1,5 +1,6 @@
 import { Box, Image, Stack, Text } from "@chakra-ui/react";
 import AnnouncementBar from "./AnnouncementBar";
+import homeImg from '../assets/rr-home.jpg'
 
 export const FrontPage = () => {
     return (
@@ -12,7 +13,7 @@ export const FrontPage = () => {
                     राह सही हो तो,<br />
                     कठिनाई भी आसान लगती है।
                 </Text>
-                <Image maxH={{ base: '20vh', md: '60vh' }} src={'../src/assets/rr-home.jpg'}></Image>
+                <Image maxH={{ base: '20vh', md: '60vh' }} src={homeImg}></Image>
             </Stack>
             
         </>
