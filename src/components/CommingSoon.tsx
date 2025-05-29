@@ -1,4 +1,5 @@
 import { Box, Image, Text } from "@chakra-ui/react";
+import img from '../src/assets/comming.webp';
 
 const FullScreenLoader = () => {
 
@@ -15,7 +16,7 @@ const FullScreenLoader = () => {
             backgroundColor="rgba(150, 144, 144, 0.9)"
             zIndex={100}
         >
-            <Image src="../src/assets/comming.webp" maxW={'200px'} borderRadius={'md'} />
+            <Image src={img} maxW={'200px'} borderRadius={'md'} />
             <Text position={'absolute'} top={'60%'} color={'red.600'}>Comming Soon</Text>
         </Box>
     );
