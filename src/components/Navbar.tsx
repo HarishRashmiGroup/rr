@@ -1,5 +1,5 @@
 import { Box, Button, Icon, Image, Text } from "@chakra-ui/react";
-import { UserPlus2, UserPlus2Icon } from "lucide-react";
+import { UserPlus2 } from "lucide-react";
 
 export const Navbar = () => {
     return (

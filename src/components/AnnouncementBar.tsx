@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Box, CloseButton, Flex, Text } from '@chakra-ui/react';
 
 const AnnouncementBar: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
   const [duration, setDuration] = useState(0);
 

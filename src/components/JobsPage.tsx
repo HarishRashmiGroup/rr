@@ -3,12 +3,9 @@ import {
   Box,
   Flex,
   Heading,
-  Input,
-  IconButton,
   Text,
   Stack,
   Image,
-  Badge,
   Button,
   Grid,
 } from '@chakra-ui/react';
@@ -17,9 +14,6 @@ import {
   Briefcase,
   Clock,
   ExternalLink,
-  Building2,
-  Users,
-  DollarSign,
 } from 'lucide-react';
 
 interface Job {
@@ -231,7 +225,7 @@ const JobCard: React.FC<{
   job: Job;
   onSave: (id: number) => void;
   isSaved: boolean;
-}> = ({ job, onSave, isSaved }) => {
+}> = ({ job}) => {
   return (
     <Box
       borderBottom={'1px solid #5d93fe'}
@@ -286,9 +280,9 @@ const JobCard: React.FC<{
 };
 
 const JobsPage: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [locationFilter, setLocationFilter] = useState('');
-  const [jobTypeFilter, setJobTypeFilter] = useState('');
+  const [searchTerm] = useState('');
+  const [locationFilter] = useState('');
+  const [jobTypeFilter] = useState('');
   const [savedJobs, setSavedJobs] = useState<Set<number>>(new Set());
 
   const handleSaveJob = (jobId: number) => {
