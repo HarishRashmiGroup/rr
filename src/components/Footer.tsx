@@ -9,6 +9,7 @@ import {
   HStack,
   useBreakpointValue
 } from '@chakra-ui/react';
+import logoImg from "../assets/rr.png";
 
 const Footer: React.FC = () => {
   const flexDirection = useBreakpointValue({ base: 'column', lg: 'row' });
@@ -36,7 +37,7 @@ const Footer: React.FC = () => {
           <VStack flex={1} align="flex-start" minW="250px">
             <HStack >
               <Image
-                src="../src/assets/rr.png"
+                src={logoImg}
                 height="45px"
                 width="auto"
                 alt="Logo"
