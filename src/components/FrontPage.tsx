@@ -13,7 +13,7 @@ export const FrontPage = () => {
                     राह सही हो तो,<br />
                     कठिनाई भी आसान लगती है।
                 </Text>
-                <Image minW={{base:"147px", md:"443px"}} maxH={{ base: '20vh', md: '60vh' }} src={homeImg}></Image>
+                <Image minW={{base:"147px", md:"295.35px"}} maxH={{ base: '20vh', md: '40vh' }} src={homeImg}></Image>
             </Stack>
             
         </>
