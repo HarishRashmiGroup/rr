@@ -1,25 +1,31 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text, VStack } from "@chakra-ui/react";
 import img from '../assets/comming.webp';
 
-const FullScreenLoader = () => {
-
-    return (
-        <Box
-            position="fixed"
-            top={0}
-            left={0}
-            width="100vw"
-            height="100vh"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            backgroundColor="rgba(150, 144, 144, 0.9)"
-            zIndex={100}
-        >
-            <Image src={img} maxW={'200px'} borderRadius={'md'} />
-            <Text position={'absolute'} top={'60%'} color={'red.600'}>Comming Soon</Text>
-        </Box>
-    );
+const ComingSoon = () => {
+  return (
+    <Box
+      position="fixed"
+      top={0}
+      left={0}
+      width="100vw"
+      height="100vh"
+      backgroundColor="gray.800"
+      color="white"
+      zIndex={100}
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      flexDirection="column"
+      opacity={0.9}
+    >
+      <VStack>
+        <Image src={img} maxW="250px" borderRadius="md" />
+        <Text fontSize="2xl" fontWeight="bold" color="teal.400">
+          We're working behind the scenes to launch soon.
+        </Text>
+      </VStack>
+    </Box>
+  );
 };
 
-export default FullScreenLoader;
+export default ComingSoon;

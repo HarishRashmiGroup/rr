@@ -13,7 +13,7 @@ import {
     Avatar
 } from '@chakra-ui/react';
 import { FiThumbsUp, FiMessageCircle, FiShare2, FiPlay } from 'react-icons/fi';
-import advImg from '../assets/rradv.webp';  
+import advImg from '../assets/rr_adv.png';
 
 interface BlogCardProps {
     id: string;
@@ -124,15 +124,15 @@ const BlogCard: React.FC<BlogCardProps> = ({
                 </Text>
 
                 <HStack pt={2} w="full">
-                    <HStack color="gray.500" _hover={{color:'#5d93fe'}}>
+                    <HStack color="gray.500" _hover={{ color: '#5d93fe' }}>
                         <Icon as={FiThumbsUp} boxSize={4} />
                         <Text fontSize="sm">{likes}</Text>
                     </HStack>
-                    <HStack color="gray.500" _hover={{color:'#5d93fe'}}>
+                    <HStack color="gray.500" _hover={{ color: '#5d93fe' }}>
                         <Icon as={FiMessageCircle} boxSize={4} />
                         <Text fontSize="sm">{comments}</Text>
                     </HStack>
-                    <HStack color="gray.500" _hover={{color:'#5d93fe'}}>
+                    <HStack color="gray.500" _hover={{ color: '#5d93fe' }}>
                         <Icon as={FiShare2} boxSize={4} />
                         <Text fontSize="sm">{shares}</Text>
                     </HStack>
@@ -146,31 +146,31 @@ const BlogHome: React.FC = () => {
     const blogData: BlogCardProps[] = [
         {
             id: '1',
-            title: 'Highest Salaries On Indian TV: What Salman Khan, Kapil Sharma And Rupali Ganguly...',
-            image: 'https://th.bing.com/th?id=ORMS.29d6c048542b27a7b3cbda5d1392427e&pid=Wdp&w=268&h=140&qlt=90&c=1&rs=1&dpr=1.25&p=0',
-            source: 'News18',
-            timeAgo: '15h',
-            likes: 7,
-            comments: 0,
-            shares: 0,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
+            title: 'RPSC RAS 2025 Notification Released: Check Eligibility, Vacancies & Apply Online',
+            image: 'https://th.bing.com/th/id/OIP.kVo6qJobGsHqxDl81pmI4AHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+            source: 'RPSC',
+            timeAgo: '2h',
+            likes: 20,
+            comments: 5,
+            shares: 3,
+            sourceLogo: 'https://upload.wikimedia.org/wikipedia/en/4/43/Rajasthan_Public_Service_Commission_logo.png'
         },
         {
             id: '2',
-            title: 'Gold And Silver Price Today — Check Prices In Mumbai, Bengaluru, Delhi, Chennai...',
-            image: 'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400&h=200&fit=crop',
-            source: 'NDTV Profit',
+            title: 'REET 2025: Application Form Released — Important Dates and Syllabus Overview',
+            image: 'https://th.bing.com/th/id/OIP.f3N9UIPNFRhgiLlLtP-VzgHaEK?w=271&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+            source: 'Board of Secondary Education Rajasthan',
             timeAgo: '6h',
-            likes: 2,
-            comments: 0,
-            shares: 0,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
+            likes: 15,
+            comments: 3,
+            shares: 2,
+            sourceLogo: 'https://bsedotnic.in/images/logo.png'
         },
         {
             id: '3',
-            title: 'Start Free Today - #1 Project Planning Tools - Productivity Tools Done Better',
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop',
-            source: 'atlassian.com',
+            title: 'Start Free Today – Online Coaching for RPSC & REET — Limited Seats!',
+            image: 'https://th.bing.com/th/id/OIP.8Yvwj4y_rdBeI9KirJnKfwHaDF?w=312&h=145&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+            source: 'EdTech Partner',
             timeAgo: '',
             likes: 0,
             comments: 0,
@@ -180,118 +180,51 @@ const BlogHome: React.FC = () => {
         },
         {
             id: '4',
-            title: 'England Lions vs India A, 1st Unofficial Test, Live streaming: Squads, timing, ...',
-            image: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=200&fit=crop',
-            source: 'India Today',
-            timeAgo: '7h',
-            likes: 18,
-            comments: 0,
-            shares: 0,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
+            title: 'Rajasthan Police Constable 2025: Admit Card Download Link Activated',
+            image: 'https://th.bing.com/th/id/OIP.tfx-9w2-2hv7XOCZJ6UsJgHaEc?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+            source: 'Police Recruitment Board',
+            timeAgo: '10h',
+            likes: 28,
+            comments: 1,
+            shares: 4,
+            sourceLogo: 'https://police.rajasthan.gov.in/images/logo.png'
         },
         {
             id: '5',
-            title: 'Woman reveals she lost 22 kg in 1 year by eating omelet daily for breakfast: Does this really work and...',
-            image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=200&fit=crop',
-            source: 'Hindustan Times',
-            timeAgo: '3d',
+            title: 'RSMSSB Agriculture Supervisor Result 2025 Declared — Direct Link Here',
+            image: 'https://th.bing.com/th/id/OIP.71PVjjV4wFy5NnLdZNHfLAHaEK?w=313&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+            source: 'RSMSSB',
+            timeAgo: '1d',
             likes: 12,
             comments: 0,
-            shares: 0,
+            shares: 1,
             isLarge: true,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
+            sourceLogo: 'https://rsmssb.rajasthan.gov.in/images/logo.png'
         },
         {
             id: '6',
-            title: 'Microsoft Layoffs: CEO Satya Nadella Reveals Reason, Chief Product Officer Has...',
-            image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop',
-            source: 'News18',
-            timeAgo: '1h',
-            likes: 3,
-            comments: 0,
+            title: 'Rajasthan High Court Clerk Recruitment 2025: Apply Before June 15',
+            image: 'https://th.bing.com/th/id/OIP.8Yvwj4y_rdBeI9KirJnKfwHaDF?w=312&h=145&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+            source: 'Rajasthan High Court',
+            timeAgo: '3h',
+            likes: 5,
+            comments: 1,
             shares: 0,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
+            sourceLogo: 'https://hcraj.nic.in/hcraj/hcraj_logo.jpg'
         },
         {
             id: '7',
-            title: 'AB de Villiers Brutally Slams IPL 2025 Commentators Over Negative Remarks On RCB,...',
-            image: 'https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=400&h=200&fit=crop',
-            source: 'Times Now',
-            timeAgo: '1d',
-            likes: 75,
-            comments: 0,
-            shares: 0,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
-        },
-        {
-            id: '4',
-            title: 'England Lions vs India A, 1st Unofficial Test, Live streaming: Squads, timing, ...',
-            image: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=400&h=200&fit=crop',
-            source: 'India Today',
-            timeAgo: '7h',
+            title: 'Upcoming Government Exams in Rajasthan: June-July 2025 Schedule',
+            image: 'https://th.bing.com/th/id/OIP.ubiC3u0N8GW4dVtRXTsrAgHaEK?w=290&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+            source: 'Exam Calendar Desk',
+            timeAgo: '12h',
             likes: 18,
-            comments: 0,
-            shares: 0,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
-        },
-        {
-            id: '5',
-            title: 'Woman reveals she lost 22 kg in 1 year by eating omelet daily for breakfast: Does this really work and...',
-            image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=200&fit=crop',
-            source: 'Hindustan Times',
-            timeAgo: '3d',
-            likes: 12,
-            comments: 0,
-            shares: 0,
-            isLarge: true,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
-        },
-        {
-            id: '6',
-            title: 'Microsoft Layoffs: CEO Satya Nadella Reveals Reason, Chief Product Officer Has...',
-            image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop',
-            source: 'News18',
-            timeAgo: '1h',
-            likes: 3,
-            comments: 0,
-            shares: 0,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
-        },
-        {
-            id: '7',
-            title: 'AB de Villiers Brutally Slams IPL 2025 Commentators Over Negative Remarks On RCB,...',
-            image: 'https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=400&h=200&fit=crop',
-            source: 'Times Now',
-            timeAgo: '1d',
-            likes: 75,
-            comments: 0,
-            shares: 0,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
-        },
-        {
-            id: '7',
-            title: 'AB de Villiers Brutally Slams IPL 2025 Commentators Over Negative Remarks On RCB,...',
-            image: 'https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=400&h=200&fit=crop',
-            source: 'Times Now',
-            timeAgo: '1d',
-            likes: 75,
-            comments: 0,
-            shares: 0,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
-        },
-        {
-            id: '5',
-            title: 'Woman reveals she lost 22 kg in 1 year by eating omelet daily for breakfast: Does this really work and...',
-            image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=200&fit=crop',
-            source: 'Hindustan Times',
-            timeAgo: '3d',
-            likes: 12,
-            comments: 0,
-            shares: 0,
-            isLarge: true,
-            sourceLogo: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=40&h=40&fit=crop&crop=face'
-        },
+            comments: 2,
+            shares: 2,
+            sourceLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Map_of_Rajasthan.svg/1200px-Map_of_Rajasthan.svg.png'
+        }
     ];
+
 
     return (
         <Container w={'full'} display={'flex'} gap={4} position={'relative'} py={8} px={0}>
@@ -314,7 +247,7 @@ const BlogHome: React.FC = () => {
                 ))}
             </SimpleGrid>
             <Box maxW={'250px'} display={{ base: 'none', md: 'block' }} position={'relative'}>
-                <Image zIndex={2} position={{ base: 'relative', md: 'sticky' }} top={{ base: 'auto', md: '150px' }} src={advImg}></Image>
+                <Image borderRadius={'md'} zIndex={2} position={{ base: 'relative', md: 'sticky' }} top={{ base: 'auto', md: '102px' }} src={advImg}></Image>
             </Box>
         </Container>
     );

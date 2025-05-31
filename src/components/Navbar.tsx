@@ -6,7 +6,7 @@ export const Navbar = () => {
     return (
         <Box bg={'white'} position={'sticky'} top={0} zIndex={99} display={'flex'} justifyContent={'space-between'} p={4} borderBottom={'2px solid #5d93fe'}>
             <Box display={'flex'} justifyContent={'left'}>
-                <Box>
+                <Box minW={'40px'}>
                     <Image src={logo} alt="" boxSize="40px" mr={3} />
                 </Box>
                 <Text mt={1} lineHeight={1}>Rajasthan<br />Recruitment</Text>

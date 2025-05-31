@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Box, CloseButton, Flex, Text } from '@chakra-ui/react';
 
 const AnnouncementBar: React.FC = () => {
-  const [isVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
   const [duration, setDuration] = useState(0);
 
@@ -75,6 +75,7 @@ const AnnouncementBar: React.FC = () => {
             size={'sm'}
             color="#E97316"
             _hover={{ bg: 'yellow.200' }}
+            onClick={() => setIsVisible(false)}
           />
         </Flex>
       </Box>
