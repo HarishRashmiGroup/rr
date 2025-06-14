@@ -1,0 +1,111 @@
+/* Basic styling for Tiptap Editor */
+.tiptap-editor-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tiptap-toolbar {
+  background-color: #f0f0f0;
+  padding: 4px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tiptap-toolbar button {
+  margin-right: 4px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.tiptap-toolbar button:hover {
+  background-color: #e0e0e0;
+}
+
+.tiptap-toolbar button.is-active {
+  background-color: #c0c0c0;
+}
+
+.tiptap-editor-container .ProseMirror {
+  padding: 12px;
+  min-height: 200px;
+  outline: none;
+}
+
+/* Basic styling for rendered HTML to make it responsive */
+/* These styles are examples and might need adjustment based on your content */
+
+.html-renderer-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.html-renderer-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.html-renderer-container th,
+.html-renderer-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.html-renderer-container th {
+  background-color: #f2f2f2;
+}
+
+.html-renderer-container strong {
+  font-weight: bold;
+}
+
+.html-renderer-container em {
+  font-style: italic;
+}
+
+.html-renderer-container h1 {
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
+
+.html-renderer-container h2 {
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+
+.html-renderer-container h3 {
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.html-renderer-container ul,
+.html-renderer-container ol {
+    padding-left: 30px;
+}
+
+.html-renderer-container blockquote {
+    margin: 1em 40px;
+    padding: 10px 20px;
+    border-left: 4px solid #ccc;
+    font-style: italic;
+}
+
+.html-renderer-container code {
+    font-family: monospace;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.html-renderer-container pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+} 
